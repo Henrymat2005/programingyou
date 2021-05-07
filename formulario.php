@@ -1,11 +1,13 @@
 <?php 
-  $destino = "contact@programingyou.com";
+  $destino = "henrymateo2005@gmail.com";
   $nombre = $_POST["nombre"];
+  $asunto = $_POST["asunto"];
   $correo = $_POST["correo"];
-  $telefono = $_POST["telefono"];
   $mensaje = $_POST["mensaje"];
-  $contenido = "nombre: " . $nombre . "/nCorreo: " . $correo . "/nTelefono: " . $telefono . "/nMensaje: " . $mensaje;
-  mail($destino, "Contacto a Programingyou", $contenido);
+  
+  &header = "Enviado desde Programing You";
+  mensajeCompleto = $mensaje . "\nAtentamente: " . $nombre;
+  mail($destino, $asunto, $mensaje, $header);
   echo "<script>alert('Correo enviado Existosamente')</script>";
   echo "<script>setTimeout(\"Location.href='index.html'\",1000)</script>";
 ?>
