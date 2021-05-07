@@ -1,0 +1,166 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0; 
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+header .logo{
+	margin-left: 10px;
+	width: 150px;
+	height: 75px;
+	float: left;
+}
+header .logo:hover{
+	transition-duration: 2s;
+	transform: rotate(1turn);
+}
+
+header .letras{
+   margin-top: 20px;
+   margin-left: -60px;
+   width: 200px;
+   height: 75px;
+}
+header .letras:hover{
+	transition-duration: 2s;
+	transform: translateX(-10px);
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+header ul li a{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: black;
+	border-radius: 26px;
+}
+header ul li a:hover {
+	background: #E1C699;
+	color: #2B1055;
+}
+::placeholder {
+  font-size: 20px;
+  font-family: apple chancery;
+}
+h3{
+	position: relative;
+	font-size: 24px;
+	color: black;
+	font-weight: 500;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#form{
+	position: relative;
+	border: 2px solid #131313;
+	background: linear-gradient(#1e2024, #18181c);
+	border-radius: 4px;
+	overflow: hidden;
+}
+#form #email{
+	width: 300px;
+	outline: none;
+	background: transparent;
+	border: navajowhite;
+	padding: 12px 15px;
+	padding-right: 50px;
+	color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+}
+#form .indicador{
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	width: 10px;
+	height: 10px;
+	background: #555;
+	border-radius: 50%;
+}
+#form.valid .indicador{
+	background: #0f0;
+	box-shadow: 0 0 5px #0f0,
+	            0 0 10px #0f0,
+	            0 0 20px #0f0,
+	            0 0 40px #0f0,
+}
+#form.invalid .indicador{
+	background: #f00;
+	box-shadow: 0 0 5px #f00,
+	            0 0 10px #f00,
+	            0 0 20px #f00,
+	            0 0 40px #f00,
+}
+#form #nombre{
+	width: 300px;
+	outline: none;
+	background: transparent;
+	border: navajowhite;
+	padding: 12px 15px;
+	padding-right: 50px;
+	color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+}
+#form #numero{
+	width: 300px;
+	outline: none;
+	background: transparent;
+	border: navajowhite;
+	padding: 12px 15px;
+	padding-right: 50px;
+	color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+}
+#form #mensaje{
+	width: 300px;
+	outline: none;
+	background: transparent;
+	border: navajowhite;
+	padding: 12px 15px;
+	padding-right: 50px;
+	color: #fff;
+    font-size: 18px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 200px;
+    max-height: 200px;
+    font-family: sans-serif;
+}
+#boton{
+	width: 300px;
+	background: transparent;
+	border: navajowhite;
+	height: 1cm;
+	margin-left: 35px;
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+.contactos{
+	background: #E1C699;
+	border-radius: 26px;
+}

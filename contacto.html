@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACTO</title>
+	<link rel="stylesheet" type="text/css" href="contacto.css">
+</head>
+<body>
+<header>
+	<div>
+		<a href="index.html"><img class="logo" src="logo2.png"></a>
+		<a href="index.html"><img class="letras" src="logo3.png"></a>
+	</div>
+	<ul>
+			<li><a class="inicio" href="index.html">Inicio</a></li>
+			<li><a href="about.html">Sobre Nosotros</a></li>
+			<li><a class="contactos" href="contacto.html">Contacto</a></li>
+		</ul>
+		<link rel="icon"  href="icono.ico">
+</header>
+<div>
+	<h3>Ingrese Sus Datos</h3>
+	<form id="form" action="enviar.php" method="post">
+		<div class="inputbox">
+			<input type="text" id="email" name="correo" placeholder="Ingrese su correo" onkeyup="validate();" required>
+			<span class="indicador"></span>
+		</div>
+		<div>
+			<input id="nombre" name="nombre" type="name" placeholder="Nombre y Apellido" required>
+		</div>
+		<div>
+			<input id="numero" name="telefono" type="text" placeholder="Telefono" required>
+		</div>
+		<div>
+			<textarea id="mensaje" name="mensaje" placeholder="Ingrese sus requerimentos" minlength="5"></textarea>
+		</div>
+		<div>
+			<input type="submit" name="enviar" value="Envar" id="boton">
+		</div>
+	</form>
+</div>
+<script>
+	function validate(){
+		const form = document.getElementById('form');
+		const email = document.getElementById('email').value;
+		const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+		if (email.match(pattern)){
+         form.classList.add('valid');
+         form.classList.remove('invalid');
+		} else {
+			form.classList.add('invalid');
+			form.classList.remove('valid');
+		}
+		if (email == "") {
+			form.classList.remove('invalid');
+			form.classList.remove('valid');
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0; 
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+}
+header .logo{
+	margin-left: 10px;
+	width: 150px;
+	height: 75px;
+	float: left;
+}
+header .logo:hover{
+	transition-duration: 2s;
+	transform: rotate(1turn);
+}
+
+header .letras{
+   margin-top: 20px;
+   margin-left: -60px;
+   width: 200px;
+   height: 75px;
+}
+header .letras:hover{
+	transition-duration: 2s;
+	transform: translateX(-10px);
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+header ul li a{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: black;
+	border-radius: 26px;
+}
+header ul li a:hover {
+	background: #E1C699;
+	color: #2B1055;
+}
+.inicio{
+	background: #E1C699;
+}
+
+	
