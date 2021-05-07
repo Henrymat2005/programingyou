@@ -123,17 +123,7 @@ h3{
     font-size: 18px;
     border-radius: 30px;
 }
-#form #numero{
-	width: 300px;
-	outline: none;
-	background: transparent;
-	border: navajowhite;
-	padding: 12px 15px;
-	padding-right: 50px;
-	color: #fff;
-    font-size: 18px;
-    border-radius: 30px;
-}
+
 #form #mensaje{
 	width: 300px;
 	outline: none;
