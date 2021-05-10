@@ -1,17 +1,27 @@
+body{
+	background-image: url("https://p1.pxfuel.com/preview/229/84/1003/silhouettes-sun-sunset-city.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: fixed;
+}
 {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
-
 header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0; 
-	width: 90%;
 	display: flex;
 	justify-content: space-between;
+	background: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
 }
 header .logo{
 	margin-left: 10px;
@@ -23,14 +33,15 @@ header .logo:hover{
 	transition-duration: 2s;
 	transform: rotate(1turn);
 }
-
-header .letras{
-   margin-top: 20px;
-   margin-left: -60px;
+header .primero{
+   margin-top: 26px;
+   display: inline-block;
    width: 200px;
    height: 75px;
+   color: #000;
+   margin-left: -40px;
 }
-header .letras:hover{
+header .primero:hover{
 	transition-duration: 2s;
 	transform: translateX(-10px);
 }
@@ -41,20 +52,75 @@ header ul{
 }
 header ul li{
 	list-style: none;
-	margin-left: 20px;
+	margin-left: -50px;
 }
 header ul li a{
 	text-decoration: none;
 	padding: 6px 15px;
 	color: black;
 	border-radius: 26px;
+	margin-right: 2cm;
 }
 header ul li a:hover {
-	background: #E1C699;
+	background: #006699;
 	color: #2B1055;
 }
 .inicio{
-	background: #E1C699;
+	background: #00AAE4;
+}
+.container{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+}
+.titulo{
+	color: #fff;
+	font-family: 'Lato', sans-serif;    
+}
+.bienvenido{
+	margin-top: 200px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+.quees{
+	margin-top: 600px;
+	margin-left: 300px;
+	text-align: justify;
+	width: 20cm;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	color: #000;
+    
+}
+h2{
+	text-align: center;
+	color:#006699;
+}
+#mover{
+	margin-top: -500px;
+}
+#subir{
+	margin-top: 100px;
+}
+#salto{
+	background: transparent;
+	border-radius: 30px;
+	text-transform: none;
+	border: 2px solid #eaeaea !important;
+	letter-spacing: 2px;
+    margin-bottom: 20px;
+    order-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 10px;
+    color: #000;
+}
+#salto:hover{
+	border: 2px solid #282e3c !important;
+	background: #006699;
+	color: #ffffff;
 }
 
-	
+
