@@ -3,7 +3,6 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    display: fixed;
 }
 {
 	margin: 0;
@@ -12,6 +11,7 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 header{
+	height: 85px;
 	position: fixed;
 	top: 0;
 	left: 0; 
@@ -28,6 +28,9 @@ header .logo{
 	width: 150px;
 	height: 75px;
 	float: left;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 header .logo:hover{
 	transition-duration: 2s;
@@ -53,6 +56,9 @@ header ul{
 header ul li{
 	list-style: none;
 	margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 header ul li a{
 	text-decoration: none;
@@ -64,6 +70,25 @@ header ul li a{
 header ul li a:hover {
 	background: #006699;
 	color: #2B1055;
+}
+#icono_menu{
+width: 50px;
+height: 50px;
+position: absolute;
+right: 20px;
+top: 16px;
+font-size: 22px;
+background: #cdcdcd;
+border-radius: 100%;
+color: #787878;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+display: none;
+}
+#icono_menu:hover{
+	background-color: #eeeeea;
 }
 .inicio{
 	background: #00AAE4;
@@ -122,5 +147,54 @@ h2{
 	background: #006699;
 	color: #ffffff;
 }
-
-
+footer{
+	text-align: center;
+}
+.autor{
+	display: inline-block;
+	margin-right: 20px;
+}
+footer p{
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 15px;
+}
+#quees{
+	margin-top: 300px;
+}
+/*Responsive Desing adaptable a dispositivos mobiles*/
+@media screen and (max-width: 1040px){
+.cabeza{
+	max-width: 1000px;
+	padding: 0 20px;
+}
+.quees{
+	max-width: 1000px;
+	text-align: justify;
+	margin-left: 130px;
+}
+}
+@media screen and (max-width: 895px){
+	.quees{
+		width: 18cm;
+    margin-left: 30px;
+	}
+}
+@media screen and (max-width: 360px){
+	.cabeza{
+		background: #fff;
+	}
+	.primero{
+     font-size: 18px;
+	}
+	#quees{
+    width: 8cm;
+    margin-top: -250px;
+	}
+	.quees{
+		width: 8cm;
+	}
+	.fondo{
+		background-repeat: no-repeat;
+	}
+}
