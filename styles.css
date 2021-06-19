@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background: #E139E1;
+    z-index: 10000;
+}
+.logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 6%;
+}
+header ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    list-style: none;
+}
+header ul a li{
+    margin-left: 30px;
+    width: 130px;
+    height: 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul a li:hover{
+    background: #fff;
+    color: #000;
+    transition-duration: 0.5s;
+}
+header ul a li{
+    color: #fff;
+    border: 2px solid #000;
+    margin-top: 7%;
+    text-decoration: none;
+}
+header ul a li:hover{
+    border: 2px solid #ff7cbc;
+}
+header ul a{
+    text-decoration: none;
+}
+.ini{
+    border: 2px solid #fff;
+}
+.compraste{
+    display: inline-block;
+    color: #fff;
+    margin-top: -20px;
+}
+span{
+    margin-left: 20px;
+}
+.imagen{
+    width: 150px;
+    position: absolute;
+    left: -2%;
+}
+.imagen:hover{
+    transition-duration: 2s;
+   transform: rotate(1turn);
+   cursor: pointer;
+}
+.conecta{
+    width: 300px;
+    float: right;
+    margin-right: 20%;
+    margin-top: -5%; 
+    display: inline-block;
+}
+.parra{
+    color: #fff;
+    margin-top: 20%;
+    font-size: 45px;
+    margin-left: 30px;
+}
+.boton{
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 200px;
+}
+.boton:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+    border: 2px solid purple;
+}
+.seccion{
+    background: #fff;
+    margin-top: 50px;
+    width: 100%;
+}
+.cards{
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.desar{
+    margin-top: 100px;
+     display: flex;
+     justify-content: center;
+}
+.desa{
+    font-size: 30px;
+    color: #006699;
+}
+.primer{
+    width: 400px;
+    height: 310px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+.programacion{
+    width: 150px;
+    margin-left: 25%;
+    display: inline-block;
+    height: 185px;
+    box-sizing: border-box;
+}
+.segundo{
+    width: 400px;
+    height: 310px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.responsive{
+    width: 150px;
+    margin-left: 25%;
+    display: inline-block;
+    height: 150px;
+    margin-top: 20px;
+}
+.tercero{
+    width: 400px;
+    height: 310px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.unico{
+    display: flex;
+    flex-direction: column;
+}
+.convertir{
+    margin-top: 500px;
+    margin-left: -1200px;
+    color: #006699;
+    font-size: 30px;
+}
+.soport{
+    width: 150px;
+    margin-left: 25%;
+    display: inline-block;
+    height: 140px;
+    margin-top: 20px;
+}
+.pri{
+    margin-top: -20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.imagenes{
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+form{
+    height: 450px;
+    width: 600px;
+    margin-left: 75px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    float: left;
+    width: 100%;
+}
+form input{
+    display: block;
+    width: 600px;
+    height: 40px;
+    padding: 20px;
+    margin: 10px 0;
+    border: 2px #ccc solid;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+form textarea{
+    display: block;
+    width: 600px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px #ccc solid;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    max-width: 600px;
+    min-width: 600px;
+    max-height: 100px;
+    min-height: 100px;
+}
+input:focus{
+  border: 2px #006699 solid;
+  outline: none;
+}
+textarea:focus{
+    border: 2px #006699 solid;
+    outline: none;
+}
+.enviar{
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+}
+.frases{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.enviar:hover{
+    transform: scale(1.05, 1.05);
+    transition-duration: 0.5s;
+    background: #ff7cbc;
+    border: 2px solid white;
+}
+.men{
+    font-size: 30px;
+    color: #006699;
+    display: block;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.entradas{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 25px; 
+}
+.ponte{
+    color: #006699;
+}
+.ponte, .parrafoss{
+    background: #fff;
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.frase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+.rosado{
+    padding-top: 1px;
+    padding-bottom: 166px;
+    width: 100%;
+    background: #E139E1;
+}
+.descripcion{
+    display: flex;
+}
+.des{
+    margin-top: 20px;
+    background: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.cms{
+    width: 400px;
+    height: 310px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.ff{
+    margin-right: 20px;
+    margin-top: -10px;
+}
+.ss{
+    margin-right: 20px;
+    margin-top: -10px;
+}
+.gestor{
+    width: 150px;
+    display: flex;
+    position: relative;
+    margin-left: 20%;
+    border: 2px solid #000;
+}
